@@ -1,0 +1,135 @@
+[
+    {
+      "cover_img": "https://i.ibb.co/zhzQyQb/health-3.jpg",
+      "theme_color": "#D9E5FF",
+      "category": "Health",
+      "category_bg_color": "#AEC8FF",
+      "category_title_color": "#0052FF",
+      "card_title": "Healthcare Access",
+      "card_title_color": "#0052FF",
+      "description": "Access to healthcare is a basic human right. Your contribution enables us to expand access to quality healthcare services for those in need. Join us in our mission to ensure that everyone can lead a healthy life.",
+      "price": "$280"
+    },
+    {
+      "cover_img": "https://i.ibb.co/L1LSf6N/Education-1.jpg",
+      "theme_color": "#FFE3E4",
+      "category": "Education",
+      "category_bg_color": "#FFC3C5",
+      "category_title_color": "#FF444A",
+      "card_title": "Support Education",
+      "card_title_color": "#FF444A",
+      "description": "By supporting education, you empower individuals to build a brighter future. Your contribution helps provide access to quality education for those in need, creating opportunities and transforming lives. Join us in making education accessible to all. Donate today and make a difference in someone's life.",
+      "price": "$290"
+    },
+    {
+      "cover_img": "https://i.ibb.co/VpZcGHh/Cloth-1.webp",
+      "theme_color": "#EBF6E2",
+      "category": "Clothing",
+      "category_bg_color": "#D4ECC1",
+      "category_title_color": "#79C23F",
+      "card_title": "Clothe the Needy",
+      "card_title_color": "#79C23F",
+      "description": "Help us provide clothing to those in need. Your donation can make a difference in the lives of individuals without adequate clothing. Join us in our mission to ensure that everyone is clothed and protected from the elements.",
+      "price": "$150"
+    },
+    {
+      "cover_img": "https://i.ibb.co/LtByhJN/Food-1.webp",
+      "theme_color": "#FEEAE3",
+      "category": "Food",
+      "category_bg_color": "#FDD2C4",
+      "category_title_color": "#F87147",
+      "card_title": "Nourish the Hungry",
+      "card_title_color": "#F87147",
+      "description": "Your donation helps put food on the tables of those facing hunger. Together, we can make sure that no one goes to bed hungry. Join us in our mission to provide nutritious meals to those in need. Make a difference today.",
+      "price": "$250"
+    },
+    {
+      "cover_img": "https://i.ibb.co/3Rjx1K0/Food-2.jpg",
+      "theme_color": "#FEEAE3",
+      "category": "Food",
+      "category_bg_color": "#FDD2C4",
+      "category_title_color": "#F87147",
+      "card_title": "Fight Food Insecurity",
+      "card_title_color": "#F87147",
+      "description": "Join us in the fight against food insecurity. Your contribution helps us provide food assistance to vulnerable individuals and families. With your support, we can create a world where everyone has access to nutritious food.",
+      "price": "$280"
+    },
+    {
+      "cover_img": "https://i.ibb.co/3kNjX60/Cloth-2.jpg",
+      "theme_color": "#EBF6E2",
+      "category": "Clothing",
+      "category_bg_color": "#D4ECC1",
+      "category_title_color": "#79C23F",
+      "card_title": "Fashion for a Cause",
+      "card_title_color": "#79C23F",
+      "description": "Support our mission by contributing to 'Fashion for a Cause.' Your donation goes towards providing clothing options for those who are less fortunate. Help us make a positive impact on someone's life through the gift of clothing.",
+      "price": "$180"
+    },
+    {
+      "cover_img": "https://i.ibb.co/kxwQWwq/Education-2.png",
+      "theme_color": "#FFE3E4",
+      "category": "Education",
+      "category_bg_color": "#FFC3C5",
+      "category_title_color": "#FF444A",
+      "card_title": "Empower Minds",
+      "card_title_color": "#FF444A",
+      "description": "Your support can empower young minds to reach their full potential. Help us in providing educational opportunities to underprivileged students. By donating, you contribute to a brighter and more educated future. Together, we can make a lasting impact.",
+      "price": "$300"
+    },
+    {
+      "cover_img": "https://i.ibb.co/2dNyNSD/health-2.webp",
+      "theme_color": "#D9E5FF",
+      "category": "Health",
+      "category_bg_color": "#AEC8FF",
+      "category_title_color": "#0052FF",
+      "card_title": "Wellness Matters",
+      "card_title_color": "#0052FF",
+      "description": "Wellness is a fundamental aspect of life. Your donation helps us promote wellness initiatives and access to healthcare for underserved communities. Together, we can make wellness a reality for everyone.",
+      "price": "$220"
+    },
+    {
+      "cover_img": "https://i.ibb.co/Tmktd4f/health-1.jpg",
+      "theme_color": "#D9E5FF",
+      "category": "Health",
+      "category_bg_color": "#AEC8FF",
+      "category_title_color": "#0052FF",
+      "card_title": "Support Better Health",
+      "card_title_color": "#0052FF",
+      "description": "Your support can improve the health and well-being of many individuals. With your donation, we can provide essential healthcare services and resources to those who need them most. Join us in promoting better health for all.",
+      "price": "$250"
+    },
+    {
+      "cover_img": "https://i.ibb.co/1RZSPx2/Education-3.webp",
+      "theme_color": "#FFE3E4",
+      "category": "Education",
+      "category_bg_color": "#FFC3C5",
+      "category_title_color": "#FF444A",
+      "card_title": "Education for All",
+      "card_title_color": "#FF444A",
+      "description": "Our mission is to make quality education accessible to every child. With your donation, we can continue to provide learning opportunities and resources to underserved communities. Join us in our journey to ensure education for all.",
+      "price": "$200"
+    },
+    {
+      "cover_img": "https://i.ibb.co/Njt67sy/Cloth-3.jpg",
+      "theme_color": "#EBF6E2",
+      "category": "Clothing",
+      "category_bg_color": "#D4ECC1",
+      "category_title_color": "#79C23F",
+      "card_title": "Warmth and Comfort",
+      "card_title_color": "#79C23F",
+      "description": "Contribute to our cause of providing warmth and comfort to those in need. Your donation helps us offer comfortable clothing options to individuals facing challenging circumstances. Make a positive change in someone's life today.",
+      "price": "$160"
+    },
+    {
+      "cover_img": "https://i.ibb.co/VQFFYVH/Food-3.jpg",
+      "theme_color": "#FEEAE3",
+      "category": "Food",
+      "category_bg_color": "#FDD2C4",
+      "category_title_color": "#F87147",
+      "card_title": "Share the Blessings",
+      "card_title_color": "#F87147",
+      "description": "Your generosity can help us share the blessings of food with those less fortunate. Together, we can alleviate hunger and ensure that every person has enough to eat. Donate now and make a meaningful impact on someone's life.",
+      "price": "$320"
+    }
+  ]
+  

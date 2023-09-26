@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <div>
-            <nav className='flex justify-between items-center mx-20 my-3'>
+            <nav className='flex flex-col md:flex-row lg:flex-row gap-5 mx-20 my-3 justify-between items-center '>
                 <img src="/src/images/Logo.png" alt="" />
                 <div>
                     <ul className='flex gap-5 cursor-pointer  '>

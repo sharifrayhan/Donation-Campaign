@@ -1,19 +1,19 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import Card from "../Card/Card";
+import PropTypes from 'prop-types';
 
-const Cards = () => {
-//   const cards = useLoaderData();
-//   console.log(cards);
-const [cards, setCards]=useState([])
-useEffect(()=>{
-    fetch('courses.json')
-    .then(res=> res.json())
-    .then(data=> setCards(data))
-},[])
+const Cards = ({cards}) => {
+
   return (
-    <p>Hello this is cards section</p>
+    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 '>
+      {
+        cards?.map(card=> <Card key={card.id} card={card}></Card>)
+      }
+    </div>
   );
 };
+
+Cards.propTypes ={
+  // map: PropTypes.func,
+}
 
 export default Cards;

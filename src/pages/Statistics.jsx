@@ -1,9 +1,17 @@
+// import { Pie } from 'react-chartjs-2';
+
+// <Pie
+//   options={10}
+//   data={30}
+// //   {}
+// />
+
 import React from 'react';
 
 const Statistics = () => {
     return (
         <div>
-            <p>This is statistics</p>
+            <p>hey</p>
         </div>
     );
 };

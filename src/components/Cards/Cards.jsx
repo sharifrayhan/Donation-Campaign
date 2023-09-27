@@ -13,7 +13,7 @@ const Cards = ({cards}) => {
 };
 
 Cards.propTypes ={
-  cards: PropTypes.object,
+  cards: PropTypes.array,
 }
 
 export default Cards;

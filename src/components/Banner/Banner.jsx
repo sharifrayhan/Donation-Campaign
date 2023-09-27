@@ -22,7 +22,7 @@ const Banner = ({ searchCategory, setSearchCategory }) => {
 };
 
 Banner.propTypes ={
-  searchCategory: PropTypes.func,
+  searchCategory: PropTypes.string,
   setSearchCategory: PropTypes.func,
 }
 

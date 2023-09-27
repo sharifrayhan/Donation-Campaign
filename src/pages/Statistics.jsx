@@ -30,7 +30,7 @@ const SimplePieChart = () => {
   return (
     <div className=" grid items-center justify-center ">
      
-      <PieChart className=' ' width={400} height={400}>
+      <PieChart  width={400} height={400}>
         <Pie
           dataKey="value"
           data={data}

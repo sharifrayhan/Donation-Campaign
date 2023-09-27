@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const DCards = ({value}) => {
     return (
-<div className=" w-[595px] shadow-xl flex rounded-lg bg-base-100 cursor-pointer " style={{backgroundColor: value?.theme_color}}>
+<div className=" w-[300px] md:w-[495px] lg:w-[595px] shadow-xl flex rounded-lg bg-base-100 cursor-pointer " style={{backgroundColor: value?.theme_color}}>
       <div className="  ">
-        <img className="rounded-l-lg h-[160px] w-[350px]" src={value?.cover_img}alt="Image Loading"/>
+        <img className="rounded-l-lg h-[100px] w-[290px] md:h-[160px] md:lg:w-[310px] lg:h-[160px] lg:w-[350px]" src={value?.cover_img}alt="Image Loading"/>
       </div>
       <div className="p-3 w-full">
         <button className="px-2 py-1 mb-2 rounded-lg font-sm" style={{backgroundColor: value?.category_bg_color, color: value?.card_title_color}}>{value?.category}</button>

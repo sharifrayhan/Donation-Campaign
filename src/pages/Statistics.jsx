@@ -1,19 +1,52 @@
-// import { Pie } from 'react-chartjs-2';
+import React, { useEffect, useState } from 'react';
+import { PieChart, Pie, Tooltip, Legend, Cell } from "recharts";
 
-// <Pie
-//   options={10}
-//   data={30}
-// //   {}
-// />
+const SimplePieChart = () => {
+    const [cards, setCards]=useState([])
+    useEffect(()=>{
+        fetch('donation_info.json')
+        .then(res=> res.json())
+        .then(data=> setCards(data))
+    },[cards])
+  
+    let lengthCards = cards.length;
+    let lengthLocalStorage = localStorage.length;
+ 
+ 
+    const yourDonationPercentage = ((lengthLocalStorage / lengthCards) * 100).toFixed(1);
+    const totalDonationPercentage = (100 - yourDonationPercentage).toFixed(1);
+  
+    const data = [
+      { name: `Your Donation (${yourDonationPercentage}%)`, value: lengthLocalStorage },
+      { name: `Total Donation (${totalDonationPercentage}%)`, value: lengthCards },
+    ];
 
-import React from 'react';
+  
 
-const Statistics = () => {
-    return (
-        <div>
-            <p>hey</p>
-        </div>
-    );
+  const colors = ['#00C49F', '#FF444A'];
+  return (
+    <div className=" grid items-center justify-center ">
+      <div>
+      <PieChart width={400} height={400}>
+        <Pie
+          dataKey="value"
+          data={data}
+          cx={200}
+          cy={200}
+          outerRadius={120}
+          
+          label
+        >
+          {data.map((entry, index) => (
+          <Cell key={`cell-${index}`} fill={colors[index]} />
+        ))}
+        </Pie>
+        <Tooltip />
+        <Legend />
+      </PieChart>
+      </div>
+    </div>
+  );
 };
 
-export default Statistics;
+export default SimplePieChart;

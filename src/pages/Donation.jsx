@@ -8,6 +8,15 @@ const Donation = () => {
     
     
     // useEffect(()=>{
+        const [cardsShow, setCardsShow] = useState(4);
+        const handleClear =() => {
+            localStorage.clear()
+            window.location.reload()
+        }
+
+        const handleSeeAll = () => {
+            setCardsShow(values.length);
+          };
         
         let length = localStorage.length
         let values = [];
@@ -17,22 +26,34 @@ const Donation = () => {
             values.push( JSON.parse(getValue)) 
             // setItems(value)
           }
-          
+        if (length==0){
+            return (
+                <div className=" h-screen flex flex-col items-center gap-3">
+                    <img className=" w-[200px]" src="/src/assets/sad.png" alt="" />
+                    <p className=" font-extrabold text-3xl">No New Donations</p>
+                </div>
+            
+            )
+        }
     // },[length])
 
     return (
-       <div className=" flex flex-col items-center">
-            <div className=" grid items-center grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-2 mx-20 ">
-         {
-             values.map(value=> <DCards key={value.id} value={value} ></DCards>)
-
-            }
-     
+        <div className="flex flex-col items-center">
+          <div className="grid items-center grid-cols-1 gap-5 md:grid-cols-1 lg:grid-cols-2 mx-3 md:mx-20 lg:mx-20">
+            {values.slice(0, cardsShow).map((value) => (
+              <DCards key={value.id} value={value}></DCards>
+            ))}
+          </div>
+          {cardsShow < values.length && (
+            <button onClick={handleSeeAll} className="btn btn-primary my-3">
+              See All
+            </button>
+          )}
+          <button onClick={handleClear} className="btn btn-primary my-3">
+            Clear All
+          </button>
         </div>
-        <button className='btn btn-primary my-3 '>See All</button>
-       </div>
-
-    );
+      );
 };
 
 export default Donation;

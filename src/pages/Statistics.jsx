@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PieChart, Pie, Tooltip, Legend, Cell } from "recharts";
 
 const SimplePieChart = () => {
@@ -15,10 +15,13 @@ const SimplePieChart = () => {
  
     const yourDonationPercentage = ((lengthLocalStorage / lengthCards) * 100).toFixed(1);
     const totalDonationPercentage = (100 - yourDonationPercentage).toFixed(1);
+
+    const x = parseFloat(yourDonationPercentage)
+    const y = parseFloat(totalDonationPercentage)
   
     const data = [
-      { name: `Your Donation (${yourDonationPercentage}%)`, value: lengthLocalStorage },
-      { name: `Total Donation (${totalDonationPercentage}%)`, value: lengthCards },
+      { name: `Your Donation (${yourDonationPercentage}%)`, value: x },
+      { name: `Total Donation (${totalDonationPercentage}%)`, value: y },
     ];
 
   
@@ -33,7 +36,7 @@ const SimplePieChart = () => {
           data={data}
           cx={200}
           cy={200}
-          outerRadius={120}
+          outerRadius={100}
           
           label
         >

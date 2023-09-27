@@ -1,7 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../components/Banner/Banner";
 import Cards from "../components/Cards/Cards";
-import { useState, useEffect } from 'react';
+import { useState, } from 'react';
+
 
 
 const Home = () => {
@@ -22,5 +23,6 @@ const Home = () => {
       </div>
   );
 };
+
 
 export default Home;

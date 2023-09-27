@@ -1,13 +1,8 @@
-import { length } from "localforage";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import DCards from "../components/Donation Cards/DCards";
 
 
 const Donation = () => {
-    const [items, setItems] = useState()
-    
-    
-    // useEffect(()=>{
         const [cardsShow, setCardsShow] = useState(4);
         const handleClear =() => {
             localStorage.clear()
@@ -24,7 +19,7 @@ const Donation = () => {
             const key = localStorage.key(i);
             const getValue = localStorage.getItem(key);
             values.push( JSON.parse(getValue)) 
-            // setItems(value)
+         
           }
         if (length==0){
             return (
@@ -35,7 +30,7 @@ const Donation = () => {
             
             )
         }
-    // },[length])
+   
 
     return (
         <div className="flex flex-col items-center">
@@ -49,7 +44,7 @@ const Donation = () => {
               See All
             </button>
           )}
-          <button onClick={handleClear} className="btn btn-primary my-3">
+          <button onClick={handleClear} className=" text-red-600 my-3">
             Clear All
           </button>
         </div>

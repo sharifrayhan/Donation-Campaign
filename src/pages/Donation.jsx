@@ -4,10 +4,6 @@ import DCards from "../components/Donation Cards/DCards";
 
 const Donation = () => {
         const [cardsShow, setCardsShow] = useState(4);
-        const handleClear =() => {
-            localStorage.clear()
-            window.location.reload()
-        }
 
         const handleSeeAll = () => {
             setCardsShow(values.length);
@@ -24,7 +20,7 @@ const Donation = () => {
         if (length==0){
             return (
                 <div className=" h-screen flex flex-col items-center gap-3">
-                    <img className=" w-[200px]" src="/src/assets/sad.png" alt="" />
+                    <img className=" w-[200px]" src="https://i.ibb.co/vX2ghKZ/sad.png" alt="" />
                     <p className=" font-extrabold text-3xl">No New Donations</p>
                 </div>
             
@@ -44,9 +40,7 @@ const Donation = () => {
               See All
             </button>
           )}
-          <button onClick={handleClear} className=" text-red-600 my-3">
-            Clear All
-          </button>
+
         </div>
       );
 };

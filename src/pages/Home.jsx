@@ -16,7 +16,7 @@ const Home = () => {
     return (
       <div>
         <Banner searchCategory={searchCategory} setSearchCategory={setSearchCategory} ></Banner>
-            <div className="mx-2 md:mx-24 lg:mx-20 my-3">
+            <div className="mx-0 flex items-center justify-center md:mx-24 lg:mx-20 my-3">
         
         <Cards cards={filteredCards}></Cards>
     </div>

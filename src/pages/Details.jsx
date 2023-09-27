@@ -4,8 +4,6 @@ import Swal from 'sweetalert2'
 import { useLoaderData } from "react-router-dom";
 
 
-
-
 const Details = () => {
    
     const [topic, setTopic] = useState()
@@ -18,14 +16,6 @@ const Details = () => {
         setTopic(findCard)
         
     },[id, cards]);
-
-    // const  [animation, setAnimation] = useState()
-    // useEffect(()=>{
-    //     fetch('green_tick.json')
-    //     .then(res=> res.json())
-    //     .then(data=> console.log(data))
-        
-    // },[]);
 
     const handleAddToStorage = () => {
         Swal.fire({
@@ -40,8 +30,7 @@ const Details = () => {
 
         localStorage.setItem(`${ Date.now()}`,JSON.stringify(topic))
     }
-    // const {cover_img,card_title,description,card_title_color,price} = topic;
-    // console.log(card_title_color)
+
     
     return (
         <div className='mx-2 md:mx-24 lg:mx-20 my-4'>

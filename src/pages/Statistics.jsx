@@ -20,8 +20,8 @@ const SimplePieChart = () => {
     const y = parseFloat(totalDonationPercentage)
   
     const data = [
-      { name: `Your Donation (${yourDonationPercentage}%)`, value: x },
-      { name: `Total Donation (${totalDonationPercentage}%)`, value: y },
+      { name: `Your Donation`, value: x },
+      { name: `Total Donation `, value: y },
     ];
 
   
@@ -29,17 +29,39 @@ const SimplePieChart = () => {
   const colors = ['#00C49F', '#FF444A'];
   return (
     <div className=" grid items-center justify-center ">
-      <div>
-      <PieChart width={400} height={400}>
+     
+      <PieChart className=' ' width={400} height={400}>
         <Pie
           dataKey="value"
           data={data}
           cx={200}
           cy={200}
-          outerRadius={100}
+          outerRadius={90}
           
-          label
+          label={({ cx, cy, midAngle, innerRadius, outerRadius, value, index }) => {
+            const RADIAN = Math.PI / 180;
+            const radius = 25 + innerRadius + (outerRadius - innerRadius);
+            const x = cx + radius * Math.cos(-midAngle * RADIAN);
+            const y = cy + radius * Math.sin(-midAngle * RADIAN);
+      
+            // Customize label style here
+            const labelStyle = {
+              fontSize: '14px', // Adjust the text size as needed
+              fill: colors[index],
+            };
+      
+            // Format the value to include '%' icon
+            const formattedValue = `${value}%`;
+      
+            return (
+              <text x={x} y={y} fill="black" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central" style={labelStyle}>
+                {formattedValue}
+              </text>
+            );
+          }}
         >
+          
+
           {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={colors[index]} />
         ))}
@@ -47,9 +69,10 @@ const SimplePieChart = () => {
         <Tooltip />
         <Legend />
       </PieChart>
-      </div>
+ 
     </div>
   );
 };
 
 export default SimplePieChart;
+
